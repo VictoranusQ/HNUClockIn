@@ -1,18 +1,18 @@
 {
   "hnu_account": {
     "id": "学号",
-    "password": "个人门户密码"
+    "password": "HQZ111AOF18l"
   },
   "baidu_ai_account": {
-    "app_id": "",
-    "api_key": "",
-    "secret_key": ""
+    "app_id": "23738919",
+    "api_key": "f6NsL5D7liWdyEchLqhrELK4",
+    "secret_key": "SrsKnfWy250xTI0WdBZhLGM3gRHcwtBn"
   },
   "clockin_inform": {
-    "省": "",
-    "市": "",
-    "县": "",
+    "省": "湖南",
+    "市": "长沙",
+    "县": "岳麓区",
     "在家详细地址": "",
-    "在校详细地址": ""
+    "在校详细地址": "桔子洲街道天马学生公寓2区7栋322"
   }
 }
