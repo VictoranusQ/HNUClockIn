@@ -1,0 +1,28 @@
+name: HNUClockIn
+
+on:
+  push:
+    
+  schedule:
+    # minute hour(UTC) day month weekday(SUN-SAT)
+    - cron: '20,50 16,19,23 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Python 3.7
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.7
+
+      # Set at_home 1 if at home
+      # --login_max_try : the limited try times of login, default 5
+      # --clockin_max_try : the limited try times of clockin, default 5
+      - name: Run main.py
+        run: |
+          python config/config.py
+          python main.py --at_home 0
